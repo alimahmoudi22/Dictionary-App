@@ -7,7 +7,7 @@ html{
 body{
     font-size: 1.6rem;
     font-family: "Poppins";
-    background-image: url("./img/daria-nepriakhina-wcomiVt0w1c-unsplash.jpg");
+    background-image: url("./img/daria-nepriakhina-wcomiVt0w1c-unsplash-min.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -98,7 +98,7 @@ body{
 }
 .word-meaning{
     color: rgb(43, 47, 43);
-
+    line-height: 1.6;
 }
 .word-example{
     color: rgb(43, 47, 43);
