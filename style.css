@@ -7,7 +7,7 @@ html{
 body{
     font-size: 1.6rem;
     font-family: "Poppins";
-    background-image: url("./img/martin-adams-G7sDNMQn_GA-unsplash.jpg");
+    background-image: url("./img/daria-nepriakhina-wcomiVt0w1c-unsplash.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -32,6 +32,8 @@ body{
     font-weight: 700;
     font-size: 3.2rem;
     margin-bottom: 3rem;
+    gap: .5rem;
+    color: rgb(43, 47, 43);
 }
 .card__title img{
     width: 6rem;
@@ -48,19 +50,61 @@ body{
     border: none;
     outline: none;
     padding: .5rem;
-    border-bottom: 2px solid rgb(9, 9, 240);
+    border-bottom: 2px solid rgb(176, 195, 176);
     font-size: 1.6rem;
 
 }
 .searchBox button{
     width: 25%;
     padding: .5rem 0;
-    background-color: rgb(9, 9, 240);
+    background-color: rgb(176, 195, 176);
     color: #FFF;
     border: none;
     outline: none;
     height: 5.5rem;
     border-radius: .5rem;
     cursor: pointer;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.result{
+    margin-top: 5rem;
+    padding: 0 1rem;
+}
+.word{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.word h3{
+    font-size: 3.4rem;
+    font-weight: 600;
+    color: rgb(43, 47, 43);
+}
+.word button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    color: rgb(176, 195, 176);
+    cursor: pointer;
+}
+.details{
+    display: flex;
+    gap: 1.2rem;
+    color: rgb(176, 195, 176);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.word-meaning{
+    color: rgb(43, 47, 43);
+
+}
+.word-example{
+    color: rgb(43, 47, 43);
+    border-left: .5rem solid rgb(176, 195, 176);
+    margin-top: 3rem;
+    padding-left: 2rem;
+    font-style: italic;
+    line-height: 1.6;
 }
