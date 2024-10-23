@@ -1,0 +1,66 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-size: 1.6rem;
+    font-family: "Poppins";
+    background-image: url("./img/martin-adams-G7sDNMQn_GA-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    background-color: #FFF;
+    border-radius: 1rem;
+    width: 90vmin;
+    padding: 8rem 5rem;
+    box-shadow: 0 2rem 4rem rgba(38, 33, 61, 0.2);
+}
+.main-card{
+    display: block;
+}
+.card__title{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 3.2rem;
+    margin-bottom: 3rem;
+}
+.card__title img{
+    width: 6rem;
+}
+.searchBox{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.searchBox input{
+    width: 70%;
+    height: 5.5rem;
+    border: none;
+    outline: none;
+    padding: .5rem;
+    border-bottom: 2px solid rgb(9, 9, 240);
+    font-size: 1.6rem;
+
+}
+.searchBox button{
+    width: 25%;
+    padding: .5rem 0;
+    background-color: rgb(9, 9, 240);
+    color: #FFF;
+    border: none;
+    outline: none;
+    height: 5.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
