@@ -18,10 +18,11 @@ function fetchWord() {
             const meanings = wordData.meanings[0];
             const phonetics = wordData.phonetics;
 
-            
             const audioSrc = phonetics[0]?.audio || '';
             if (audioSrc) {
                 audio.setAttribute("src", audioSrc);
+            } else {
+                audio.removeAttribute("src");
             }
 
             resultWrapper.innerHTML = `
@@ -38,6 +39,7 @@ function fetchWord() {
                 <p class="word-meaning">${meanings.definitions[0].definition}</p>
                 <p class="word-example">${meanings.definitions[0].example || ''}</p>
             `;
+            input.value = "";
         })
         .catch((err) => {
             console.error(err);
@@ -46,9 +48,20 @@ function fetchWord() {
 }
 
 button.addEventListener("click", fetchWord);
+input.addEventListener("keydown",(event) => {
+    if(event.key == "Enter"){
+        fetchWord()
+    }
+});
 
 resultWrapper.addEventListener("click", (event) => {
     if (event.target.closest("i")) {
-        audio.play();
+        if (audio.src) {
+            audio.play().catch(err => {
+                console.log("Error playing audio:", err);
+            });
+        } else {
+            alert("No audio available for this word.");
+        }
     }
 });
